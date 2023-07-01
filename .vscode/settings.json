@@ -1,0 +1,8 @@
+{
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "editor.fontSize": 13,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "One Dark Pro Italic Vivid"
+}
