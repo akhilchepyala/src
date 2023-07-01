@@ -16,7 +16,7 @@ const MealItemForm = ({ id }) => {
           defaultValue: "1",
         }}
       />
-      <button onClick={(e) => e.preventDefault()} >+ Add</button>
+      <button >+ Add</button>
     </form>
   );
 };
