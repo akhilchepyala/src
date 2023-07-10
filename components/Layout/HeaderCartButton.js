@@ -1,21 +1,19 @@
-import React, { Fragment } from 'react';
-import CartIcon from '../Cart/CartIcon';
-import classes from './HeaderCartButton.module.css';
+import React, { Fragment } from "react";
+import CartIcon from "../Cart/CartIcon";
+import classes from "./HeaderCartButton.module.css";
 
-const HeaderCartButton = () => {
+const HeaderCartButton = ({ handleOpenModalClick }) => {
   return (
     <Fragment>
-    <button className={classes.button}>
-      <span>Your Cart</span>
-      <span className={classes.icon}>
-        <CartIcon/>
-      </span>
-      <span className={classes.badge}>
-        2
-      </span>
-    </button>
+      <button className={classes.button} onClick={() => handleOpenModalClick()}>
+        <span>Your Cart</span>
+        <span className={classes.icon}>
+          <CartIcon />
+        </span>
+        <span className={classes.badge}>2</span>
+      </button>
     </Fragment>
-  )
-}
+  );
+};
 
 export default HeaderCartButton;

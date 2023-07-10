@@ -4,12 +4,13 @@ import classes from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 import MealsSummary from "../Meals/MealsSummary";
 
-const Header = () => {
+const Header = ({ openClickForModal }) => {
+  console.log(openClickForModal, "handle");
   return (
     <Fragment>
       <header className={classes.header}>
         <h1>Quick Meals To Order</h1>
-        <HeaderCartButton />
+        <HeaderCartButton handleOpenModalClick={openClickForModal} />
       </header>
       <div className={classes["main-image"]}>
         <img src={mealsImage} alt=" A Table full of delicious Food"></img>
