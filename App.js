@@ -9,7 +9,7 @@ function App() {
     setModal(false);
   };
   const handleOpenModalClick = () => {
-    setModal(true);
+    setModal(true);s
   };
 
   return (
